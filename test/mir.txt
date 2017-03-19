@@ -1,0 +1,4 @@
+ath-miR172b-3p
+ath-miR824-5p
+ath-miR399b
+ath-miR390a-5p
