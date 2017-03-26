@@ -126,19 +126,19 @@ D. CDS target prediction (homo_mode) using varied parameters
    
 E. target mimics prediction
 
-   perl ../TarHunter.pl -q mir.txt -s spe2.txt -b nc_db/ -I -o out10
+    perl ../TarHunter.pl -q mir.txt -s spe2.txt -b nc_db/ -I -o out10
 
    
 F. noncoding target prediction (homo_mode)
 
-   perl ../TarHunter.pl -q mir.txt  -s spe3.txt  -b nc_db/ -G -f 5 -c 0.5 -o out11
-   (note: F use moderately relaxed settings (-f 5 -c 0.5) to capture miR390-TAS3)
+    perl ../TarHunter.pl -q mir.txt  -s spe3.txt  -b nc_db/ -G -f 5 -c 0.5 -o out11
+    (note: F use moderately relaxed settings (-f 5 -c 0.5) to capture miR390-TAS3)
 
    
 G. prediction of the targets of non-miRBase miRNAs
 
-   perl ../TarHunter.pl -q mir.txt -n ../miRs/sit_mir.fa -s spe4.txt -b cds_db/ -o out12
-   (note: G predicts the targets of S. italica miRNAs (Chavez et al 2014 Nat Commun) that are not collected in miRBase)
+    perl ../TarHunter.pl -q mir.txt -n ../miRs/sit_mir.fa -s spe4.txt -b cds_db/ -o out12
+    (note: G predicts the targets of S. italica miRNAs (Chavez et al 2014 Nat Commun) that are not collected in miRBase)
 
 
 
