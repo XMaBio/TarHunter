@@ -61,7 +61,7 @@ RNAhybrid    (http://bibiserv.techfak.uni-bielefeld.de/rnahybrid)
 Run the following commands:
 cd test/
 
-perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -o out
+    perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -o out
 
 
 
@@ -73,7 +73,7 @@ cd test/
 
 A. CDS target prediction (ortho_mode, one step)
 
-   perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -o out1
+    perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -o out1
 
 
 B. CDS target prediction (ortho_mode, two steps, recommended)
