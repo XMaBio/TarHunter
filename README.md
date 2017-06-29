@@ -89,7 +89,7 @@ B. CDS target prediction (ortho_mode, two steps, recommended)
 
 C. CDS target prediction (ortho_mode) using varied parameters
 
-   (Note: it is recommended to run B1 before running the following commands, and add -a parameter)
+   (Note: it is recommended to run B1 before running the following commands, and add -a ortho/ortho_aln_MUSCLE.afa parameter)
 
    C1. Set score cutoff to 5
    
