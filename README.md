@@ -89,20 +89,20 @@ B. CDS target prediction (ortho_mode, two steps, recommended)
 
 C. CDS target prediction (ortho_mode) using varied parameters
 
-   Run B1 command before running the following commands.
+   (Note: it is recommended to run B1 before running the following commands, and add -a parameter)
 
    C1. Set score cutoff to 5
    
-       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -a ortho/ortho_aln_MUSCLE.afa -f 5 -o out3
+       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -f 5 -o out3
       (note: C1 captures miR172-MYB84 that is not detected in B2, as the default score cutoff is 4)
   
    C2. Use total mispair cutoff
    
-       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -a ortho/ortho_aln_MUSCLE.afa -M 4 -o out4
+       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -M 4 -o out4
 
    C3. Use RNAhybrid
    
-       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -a ortho/ortho_aln_MUSCLE.afa -p 2 -o out5
+       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -p 2 -o out5
     
    C4. Without conservation filter
    
@@ -110,7 +110,7 @@ C. CDS target prediction (ortho_mode) using varied parameters
     
    C5. Without orthologous miRNA search
    
-       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -a ortho/ortho_aln_MUSCLE.afa -R -o out7
+       perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -R -o out7
 
        
 D. CDS target prediction (homo_mode) using varied parameters
