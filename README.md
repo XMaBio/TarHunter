@@ -36,7 +36,8 @@ conserved. It is performed in three steps: (i), (iii) and (iv) as mentioned abov
 eTM prediction is based on the criteria that the central mispairs are flanked by two 
 highly paired regions.
 
-
+Citation: Ma X. et al. TarHunter, a tool for predicting conserved microRNA targets 
+and target mimics in plants. Bioinformatics. 2017 Dec. 11 
 
 
 ===============================================================================
