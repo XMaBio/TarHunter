@@ -19,10 +19,10 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the       
 #  GNU General Public License for more details.
 #  
-#  Author: Xuan Ma <xuanma@genetics.ac.cn>
+#  Author: Xuan Ma <skyxma@tjnu.edu.cn>
 #
 #  Ma X. et al. TarHunter, a tool for predicting conserved microRNA 
-#  targets and target mimics in plants. Bioinformatics. 2017 Dec. 11
+#  targets and target mimics in plants. Bioinformatics. 2018 May 1
 #
 #########################################################################
 
