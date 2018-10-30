@@ -37,7 +37,7 @@ eTM prediction is based on the criteria that the central mispairs are flanked by
 highly paired regions.
 
 Citation: Ma X. et al. TarHunter, a tool for predicting conserved microRNA targets 
-and target mimics in plants. Bioinformatics. 2017 Dec. 11 
+and target mimics in plants. Bioinformatics. 2018 May 1 
 
 
 ===============================================================================
