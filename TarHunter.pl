@@ -35,6 +35,7 @@ use File::Temp qw/tempfile tempdir/;
 use File::Basename;
 use IO::File;
 use List::Util qw/max min/;
+no warnings 'recursion';
 
 my $TarHunter_version = "1.0";
 my $fasta_version   = "fasta36";
@@ -1106,7 +1107,7 @@ sub run_FASTA {
 
     STDERR->print ("Running FASTA for $mirName ...  ");
     
-    open my $run_fasta, "$fasta_version -A -n -Q -i -U -T $threads -E 100000 $mirfile $cdsfile 1 |" or die $!;
+    open my $run_fasta, "$fasta_version -A -n -Q -i -U -T $threads -E 100000 $mirfile $cdsfile 1 2>/dev/null |" or die $!;
     while (<$run_fasta>) {
         $fasta_output_ID ++;
         chomp;
