@@ -1,9 +1,7 @@
-===============================================================================
-         TarHunter: a tool for predicting conserved miRNA target 
-                    and target mimics in plants.
-===============================================================================
+#  TarHunter: a tool for predicting conserved miRNA target and target mimics in plants.
 
-Version 1.0
+
+**Version 1.0**
 
 Author: Xuan Ma <skyxma@tjnu.edu.cn>
  
@@ -18,9 +16,9 @@ PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 
 
-===============================================================================
-                                  Description
-===============================================================================
+
+## Description
+
 TarHunter's ortho_mode is designed for the prediction of conserved CDS targets. Its 
 strategy is that orthologous miRNAs target the corresponding positions of multiple 
 sequence alignment of orthologous genes. It is performed in the following four steps:
@@ -40,9 +38,8 @@ Citation: Ma X. et al. TarHunter, a tool for predicting conserved microRNA targe
 and target mimics in plants. Bioinformatics. 2018 May 1 
 
 
-===============================================================================
-                                 Prerequisites
-===============================================================================
+
+##  Prerequisites
 OS Platform: Linux
 Perl 5.10, or above
 
@@ -56,9 +53,7 @@ RNAhybrid    (http://bibiserv.techfak.uni-bielefeld.de/rnahybrid)
 
 
 
-===============================================================================
-                                  Simple test
-===============================================================================
+## Simple test
 Run the following commands:
 cd test/
 
@@ -66,18 +61,16 @@ cd test/
 
 
 
+## Examples
 
-===============================================================================
-                                    Examples
-===============================================================================
 cd test/
 
-A. CDS target prediction (ortho_mode, one step)
+**A.** CDS target prediction (ortho_mode, one step)
 
     perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -o out1
 
 
-B. CDS target prediction (ortho_mode, two steps, recommended)
+**B.** CDS target prediction (ortho_mode, two steps, recommended)
 
    B1. Produce orthologous gene alignment file
    
@@ -88,7 +81,7 @@ B. CDS target prediction (ortho_mode, two steps, recommended)
        perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -a ortho/ortho_aln_MUSCLE.afa -o out2
 
 
-C. CDS target prediction (ortho_mode) using varied parameters
+**C.** CDS target prediction (ortho_mode) using varied parameters
 
    (Note: it is recommended to run B1 before running the following commands, and add -a ortho/ortho_aln_MUSCLE.afa parameter)
 
@@ -114,7 +107,7 @@ C. CDS target prediction (ortho_mode) using varied parameters
        perl ../TarHunter.pl -q mir.txt -s spe1.txt -b cds_db/ -R -o out7
 
        
-D. CDS target prediction (homo_mode) using varied parameters
+**D.** CDS target prediction (homo_mode) using varied parameters
    
    D1. Search conserved miRNA targets
    
@@ -125,28 +118,25 @@ D. CDS target prediction (homo_mode) using varied parameters
        perl ../TarHunter.pl -q mir.txt  -s spe1.txt  -b cds_db/ -G -c 0.5 -o out9
        (note: a loose identity cutoff (-c 0.5) groups AP2,TOE,SMZ together)
    
-E. target mimics prediction
+**E.** target mimics prediction
 
     perl ../TarHunter.pl -q mir.txt -s spe2.txt -b nc_db/ -I -o out10
 
    
-F. noncoding target prediction (homo_mode)
+**F.** noncoding target prediction (homo_mode)
 
     perl ../TarHunter.pl -q mir.txt  -s spe3.txt  -b nc_db/ -G -f 5 -c 0.5 -o out11
     (note: F use moderately relaxed settings (-f 5 -c 0.5) to capture miR390-TAS3)
 
    
-G. prediction of the targets of non-miRBase miRNAs
+**G.** prediction of the targets of non-miRBase miRNAs
 
     perl ../TarHunter.pl -q mir.txt -n ../miRs/sit_mir.fa -s spe4.txt -b cds_db/ -o out12
     (note: G predicts the targets of S. italica miRNAs (Chavez et al 2014 Nat Commun) that are not collected in miRBase)
 
 
 
-   
-===============================================================================
-                                Important notes
-===============================================================================
+## Important notes
 1. The names of the sequence files should be species name abbreviation followed
    by dot fa, e.g., ath.fa.
    
